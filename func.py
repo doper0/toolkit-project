@@ -77,26 +77,26 @@ def trinum(x):  ########################## 6. return list of all the triangle nu
     return z
 
 
-def powsum():  ###########################  7. print and sum all the numbers in power of 2 up to x
+#def powsum():  ###########################  6.5 . print and sum all the numbers in power of 2 up to x
     # +  print the digit lenght.
 
-    x = 0
-    r = 0
-    z = ''
-    y = int(input('enter a border  '))
-    for i in range(1, y + 1):
-        y = i ** 2
-        r += 1
-        print(r, '.', y)
-        x += y
-    print('sum:', x)
-    z = len(str(x))
-    print('digit lenght:', z)
+#    x = 0
+#    r = 0
+ #   z = ''
+ #   y = int(input('enter a border  '))
+   # for i in range(1, y + 1):
+ #       y = i ** 2
+ #       r += 1
+ #       print(r, '.', y)
+ #       x += y
+  #  print('sum:', x)
+ #   z = len(str(x))
+#   print('digit lenght:', z)
 
-    return x
+ #   return x
 
 
-def multicalc():  ######################### 8. A calculator containing all the operations of the account is rooting for the numbers entered
+def multicalc():  ######################### 7. A calculator containing all the operations of the account is rooting for the numbers entered
     #######################################   and showing the abbreviated multiplication formulas.
     x = int(input('enter a number as x '))
     y = int(input('enter another number as y '))
@@ -125,11 +125,14 @@ def multicalc():  ######################### 8. A calculator containing all the o
     print('(x-y)**2:'), print('x*x-2xy+y*y =', x, '*', x, '-', 2, '*', x, '*', y, '+', y, '*', y, '=', (x - y) ** 2)
 
 
-def fib():  ##################9. print all Fibonacci numbers up to z.
+def fib():  ##################8. print all Fibonacci numbers up to z.
     x, y, r = 0, 1, 0
-    z = int(input('enter a number'))
+    z = int(input('enter a number:  '))
     z = z - 1
     while r <= z:
         x, y = y, y + x
         r = r + 1
-    print(r, '.', x)
+        print(r, '.', x)
+        print('')
+    print('')
+    print(x)
