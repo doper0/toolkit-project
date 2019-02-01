@@ -1,4 +1,0 @@
-
-cd..
-shutdown -i 
-exit()
