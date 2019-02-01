@@ -5,8 +5,8 @@ import os
 
 y = 0
 x = str(s.argv[1])
-print('Adam ofer - python [Version 1.5.2004]                                           '
-      'Copyright (c) 2019.  All rights reserved.')
+print('python toolkit [Version 1.5.2004]                                               '
+      'Copyright (c) 2019 backpack.  All rights reserved.')
 print('')
 
 if x == '-h':
@@ -45,12 +45,14 @@ if x == '-h':
 
 if x == '-i':
     print('')
-    print('-toolkit born in the name pyhelp and it began writing on 28.1.2019 by Adam Ofer.'
+    print('-backpack(toolkit) born in the name pyhelp and it began writing on 28.1.2019 by Adam Ofer.'
           'The purpose of the script is to use other function that can'
-          ' solve               problems, encryption and complex math calculations.')
+          ' solve               problems, encryption and complex math calculations. the script also run cmd functions:'
+          'ip finder, CMD color change, shutdown dialog and shows the code source')
     print('')
     print('-The script was written in Pycharm and it combines two other scripts written by Adam Ofer and combines additional modules')
     print('')
+    y=os.system('pause')
     print('Run instructions:')
     print('    r: run the program functions (run).')
     print('    i: show this text (information)')
@@ -58,8 +60,10 @@ if x == '-i':
     print('    ?: show the functions and how to run them (help).')
     print('    p: print a text (print).')
     print('    s: open shutdown dialog.')
-    print('    c: show code source (code source)')
+    print('    cs: show code source (code source)')
+    print('    c: change the color (color)')
     print('')
+    y=os.system('pause')
     print('functions:')
     print('    encrypt: slove and encrypt sentenses and words')
     print('')
@@ -83,9 +87,9 @@ if x == '-i':
 
     exit(0)
 if x == '-?':
-    print('usage: [encrypt/powme/multicalc/crusher/fib/palindrome/power/squereme] -r       ')
+    print('usage: [encrypter/powme/multicalc/crusher/fib/palindrome/power/squereme] -r       ')
     x=int(input())
-    if x == 'encrypt -r':
+    if x == 'encrypter -r':
         func.encrypter()
         exit(0)
     if x == 'powme -r':
@@ -122,15 +126,38 @@ if x=='-p':
         print('forgot: "-r"')
         exit(0)
 if x=='-s':
-    y=os.system('shutdown.bat')
+    y=os.system('shutdown -i')
     exit(0)
 if x=='-ip':
-    y=os.system('ipfind.bat')
+    y=os.system('ipconfig')
     print('')
     print('search for " IPv4 Address" to find your ip')
     exit(0)
-if x=='-c':
-    y=os.system('source.bat')
+if x=='-cs':
+    y=os.system('type backpack.py')
     exit(0)
+if x=='-c':
+    y=input('choose a color: [red/green/blue/white/yellow/gray]   ')
+    if y=='red':
+        os.system('color 4')
+        exit(0)
+    if y=='green':
+        os.system('color 2')
+        exit(0)
+    if y=='blue':
+        os.system('color 1')
+        exit(0)
+    if y=='white':
+        os.system('color 7')
+        exit(0)
+    if y == 'yellow':
+        os.system('color 6')
+        exit(0)
+    if y == 'gray':
+        os.system('color 8')
+        exit(0)
+    if y == 'black':
+        os.system('color 0')
+        exit(0)
 else:
-        print('try: toolkit.py [-i/-h/-p/-s/-ip/-c/-?]  ')
+        print('try: backpack.py [-i/-h/-p/-s/-ip/-cs/-c/-?]  ')
