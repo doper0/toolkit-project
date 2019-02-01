@@ -10,9 +10,9 @@ print('python toolkit [Version 1.5.2004]                                        
 print('')
 
 if x == '-h':
-    print('usage: [encrypt/powme/multicalc/crusher/fib/palindrome/power/squereme/trinum] -r       ')
+    print('usage: [encrypter/powme/multicalc/crusher/fib/palindrome/power/squereme/trinum] -r       ')
     x = input()
-    if x == 'encrypt -r':
+    if x == 'encrypter -r':
         func.encrypter()
         exit(0)
     if x == 'powme -r':
@@ -64,7 +64,7 @@ if x == '-i':
     print('')
     y=os.system('pause')
     print('functions:')
-    print('    encrypt: slove and encrypt sentenses and words')
+    print('    encrypter: slove and encrypt sentenses and words')
     print('')
     print('    powme: power a number by himself. y=x**x')
     print('')
