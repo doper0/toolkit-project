@@ -2,6 +2,7 @@ import sys as s
 import func
 import crusher as c
 import os
+###################################### old version old version old version old version old version
 
 y = 0
 x = str(s.argv[1])
