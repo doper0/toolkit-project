@@ -89,7 +89,7 @@ if x == '-i':
     exit(0)
 if x == '-?':
     print('usage: [encrypter/powme/multicalc/crusher/fib/palindrome/power/squereme] -r       ')
-    x=int(input())
+    x=input()
     if x == 'encrypter -r':
         func.encrypter()
         exit(0)
