@@ -2,7 +2,6 @@ import math as m
 import sys as s
 import decimal as d
 
-
 # my moduls #
 
 
